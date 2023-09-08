@@ -1,13 +1,13 @@
-h1 Message Form
+div(style="display:flex; flex-direction:column; align-items:center; gap:10px;")
+  h1 Message Form
+  form(action="/new" method="POST" style="display:flex; flex-direction:column; gap:10px;")
+    div
+      label(for="author") Author:
+      input(type="text" id="author" name="author" required)
 
-form(action="/new" method="POST")
-  div
-    label(for="author") Author:
-    input(type="text" id="author" name="author" required)
+    div
+      label(for="text") Message:
+      textarea(id="text" name="text" required)
 
-  div
-    label(for="text") Message:
-    textarea(id="text" name="text" required)
-
-  div
-    button(type="submit") Submit
+    div(style="display:flex; justify-content:flex-end;")
+     button(type="submit") Submit
