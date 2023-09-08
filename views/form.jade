@@ -1,0 +1,13 @@
+h1 Message Form
+
+form(action="/new" method="POST")
+  div
+    label(for="author") Author:
+    input(type="text" id="author" name="author" required)
+
+  div
+    label(for="text") Message:
+    textarea(id="text" name="text" required)
+
+  div
+    button(type="submit") Submit
